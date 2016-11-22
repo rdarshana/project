@@ -1,3 +1,4 @@
 1. create folder
 2. Import repository
-3. under trunk- create folders and checkin
+3. Get update
+4. under trunk- create folders and checkin
