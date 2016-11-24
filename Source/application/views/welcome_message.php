@@ -64,6 +64,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
+        
+       <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
+        
 </head>
 <body>
 
