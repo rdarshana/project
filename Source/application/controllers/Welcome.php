@@ -28,7 +28,7 @@ class Welcome extends CI_Controller {
             $this->load->model('model_users');
             
             $data['title'] = 'MVC cool title';
-            $data['pageHeader'] = 'Intro my MVC Design';
+            $data['pageHeader'] = 'User Listing';
             $data['firstNames'] = $this->model_users->getFirstNames();
             $data['users'] = $this->model_users->getUsers();
             

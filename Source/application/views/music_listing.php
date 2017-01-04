@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title><?php echo $title; ?></title>
+	<title>Dancing Listing</title>
 
 	<style type="text/css">
 
@@ -63,23 +63,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
-        
-        table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-    
 	</style>
         
        <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
@@ -88,55 +71,43 @@ tr:nth-child(even) {
 <body>
 
 <div id="container">
-	<h1><?php echo $pageHeader?></h1>
 
-	<div id="body">
-            
-            <?php                
-                foreach ($users as $object){
-            ?>
-   <table>
+<table>
     <tr>
-	<!--<td>
+	<td>
             <img name="group" src="" width="32" height="32" alt="">
-            <img src="../images/img1.jpeg" alt=""/>
-            <img src="<?php echo base_url('images/img1.jpeg'); ?>" />
-	</td>-->
+	</td>
 	<td>
             <table>
 		<tr>
-                    <td>ID</td>
-                    <td><?php echo $object->id ?></td>
+                    <td>Group Name</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>User Name</td>
-                    <td><?php echo $object->username ?></td>
+                    <td>Contact Person</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>First Name</td>
-                    <td><?php echo $object->firstName ?></td>
+                    <td>Telephone</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>Last Name</td>
-                    <td><?php echo $object->lastName ?></td>
+                    <td>Mobile</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td><?php echo $object->address ?></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>Phone</td>
-                    <td><?php echo $object->phone ?></td>
+                    <td>Email</td>
+                    <td></td>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-                
-<?php
-}
-?>
-            
+        
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
