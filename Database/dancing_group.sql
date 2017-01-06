@@ -13,5 +13,6 @@ CREATE TABLE `music_gallery`.`dancing_group`(
   number_of_members INT NULL,
   registration_no VARCHAR(100) NOT NULL,
   web VARCHAR(150) NULL,
+  image_link VARCHAR(250) NULL
   PRIMARY KEY(id)
 ) ENGINE = InnoDB
