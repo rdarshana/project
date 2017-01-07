@@ -18,7 +18,7 @@ class model_dancing extends CI_Model{
     
     function getDancingListData()
     {
-        $query = $this->db->query("SELECT group_name,added_date,dancing_style,address,contact_no,contact_person_name FROM dancing_group");
+        $query = $this->db->query("SELECT group_name,added_date,dancing_style,address,contact_no,contact_person_name,email,web,image_link FROM dancing_group");
         
         if($query->num_rows()>0){
             return $query->result();

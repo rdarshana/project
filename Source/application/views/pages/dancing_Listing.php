@@ -8,29 +8,31 @@ and open the template in the editor.
 <div id="body">
             
  <?php foreach ($dacingListing as $object){ ?>
+    
    <table>
     <tr>
-	<!--<td>
-            <img name="group" src="" width="32" height="32" alt="">
-            <img src="../images/img1.jpeg" alt=""/>
-            <img src="<?php echo base_url('images/img1.jpeg'); ?>" />
-	</td>-->
+	<td>
+            <!--<img name="group" src="" width="32" height="32" alt="">
+            <img src="../images/img1.jpeg" alt=""/> -->
+            <img src="<?php echo base_url($object->image_link); ?>" />
+            <!--<img src="C:/xampp/htdocs/proj/trunk/Source/application/images/img1.jpeg" /> -->
+	</td>
 	<td>
             <table>
 		<tr>
-                    <td>ID</td>
+                    <td>Group Name</td>
                     <td><?php echo $object->group_name ?></td>
                 </tr>
                 <tr>
-                    <td>User Name</td>
+                    <td>Dancing Style</td>
                     <td><?php echo $object->dancing_style ?></td>
                 </tr>
                 <tr>
-                    <td>First Name</td>
+                    <td>Contact Person</td>
                     <td><?php echo $object->contact_person_name ?></td>
                 </tr>
                 <tr>
-                    <td>Last Name</td>
+                    <td>Contact No</td>
                     <td><?php echo $object->contact_no ?></td>
                 </tr>
                 <tr>
@@ -38,20 +40,12 @@ and open the template in the editor.
                     <td><?php echo $object->address ?></td>
                 </tr>
                 <tr>
-                    <td>Phone</td>
-                    <td><?php echo $object->charges ?></td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
+                    <td>Added Date</td>
                     <td><?php echo $object->added_date ?></td>
                 </tr>                
                 <tr>
                     <td>Phone</td>
                     <td><?php echo $object->email ?></td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td><?php echo $object->group_details ?></td>
                 </tr>
                 <tr>
                     <td>Phone</td>
