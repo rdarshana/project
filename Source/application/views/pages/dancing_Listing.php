@@ -12,10 +12,7 @@ and open the template in the editor.
    <table>
     <tr>
 	<td>
-            <!--<img name="group" src="" width="32" height="32" alt="">
-            <img src="../images/img1.jpeg" alt=""/> -->
             <img src="<?php echo base_url($object->image_link); ?>" />
-            <!--<img src="C:/xampp/htdocs/proj/trunk/Source/application/images/img1.jpeg" /> -->
 	</td>
 	<td>
             <table>
@@ -62,5 +59,7 @@ and open the template in the editor.
             
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+    <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+        
+      
 </div>
