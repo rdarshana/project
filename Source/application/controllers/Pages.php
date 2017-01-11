@@ -8,7 +8,7 @@
 
 /**
  * Description of Pages
- *
+ *test
  * @author rukshan
  */
 class Pages extends CI_Controller{
