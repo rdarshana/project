@@ -32,8 +32,15 @@ class homeControll extends CI_Controller {
 	public function Test() {
         $this->load->view('MainSite/Test');
     }
-    	public function Category() {
-        $this->load->view('MainSite/Category');
+    
+    public function Category($page = 'Category'){
+        if(!file_exists('application/views/MainSite/'.$page.'.php')){
+            echo "Sory, File Filedoes not exist";
+        }
+        else {  
+           $this->load->view('MainSite/'.$page);
+
+        }
     }
 }
 ?>
