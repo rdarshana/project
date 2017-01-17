@@ -41,6 +41,7 @@
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Payment")?>">Payment</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/PaymentOld")?>">PaymentOld<span class="caret"></span></a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Test")?>">Test</a></li>
+                                                        <li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category</a></li>
 						</ul> <!-- .menu -->
 					</nav> <!-- .main-navigation -->
 					<div class="mobile-menu"></div>
@@ -51,7 +52,7 @@
 				<div class="fullwidth-block inner-content">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-4">
 								<div class="content">
 									<h2 class="entry-title">Blog</h2>
 
@@ -121,7 +122,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-md-push-1">
+							<div class="col-md-8 col-md-push-1">
 								<aside class="sidebar">
 									<div class="widget">
 										<h3 class="widget-title">Discography</h3>

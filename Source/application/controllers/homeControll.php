@@ -32,6 +32,8 @@ class homeControll extends CI_Controller {
 	public function Test() {
         $this->load->view('MainSite/Test');
     }
-
+    	public function Category() {
+        $this->load->view('MainSite/Category');
+    }
 }
 ?>
