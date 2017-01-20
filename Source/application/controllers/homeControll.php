@@ -38,7 +38,10 @@ class homeControll extends CI_Controller {
             echo "Sory, File Filedoes not exist";
         }
         else {  
-           $this->load->view('MainSite/'.$page);
+           $this->load->model('model_dancing');
+           $data['dancingListing']=$this->model_dancing->getDancingListData();
+           print_r($data);
+           $this->load->view('MainSite/'.$page, $data);
 
         }
     }
