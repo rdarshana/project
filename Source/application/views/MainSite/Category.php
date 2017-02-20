@@ -132,7 +132,7 @@
 												<figure class="cover"><img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1"></figure>
 												<div class="detail">
 													<h3><a href="#"><?php echo $object->group_name ?></a></h3>
-													<span class="year">2004</span>
+                                                                                                        <span class="year"><?php echo $object->group_details ?></span>
 													<span class="track">17 tracks</span>
 												</div>
 											</li>
