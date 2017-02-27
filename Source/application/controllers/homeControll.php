@@ -40,7 +40,7 @@ class homeControll extends CI_Controller {
         else {  
            $this->load->model('model_dancing');
            $data['dancingListing']=$this->model_dancing->getDancingListData();
-           print_r($data);
+           
            $this->load->view('MainSite/'.$page, $data);
 
         }

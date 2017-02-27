@@ -36,117 +36,51 @@
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/AboutUs")?>">About</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Gallery")?>">Gallery</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Download")?>">Download</a></li>
-							<li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Blog")?>">Blog</a></li>
+							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Blog")?>">Blog</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Contact")?>">Contact</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Payment")?>">Payment</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/PaymentOld")?>">PaymentOld<span class="caret"></span></a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Test")?>">Test</a></li>
-                                                        <li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category</a></li>
+                                                        <li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category</a></li>
 						</ul> <!-- .menu -->
 					</nav> <!-- .main-navigation -->
 					<div class="mobile-menu"></div>
 				</div>
 			</header> <!-- .site-header -->
 			
-			<main class="main-content">
-				<div class="fullwidth-block inner-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="content">
-									<h2 class="entry-title">Blog</h2>
-
-									<div class="post">
-										<div class="entry-date">
-											<div class="date">23</div>
-											<span class="month">Jun</span>
-										</div>
-										<div class="featured-image">
-											<img src="<?php echo asset_url();?>dummy/featured-image-1.jpg" alt="">
-										</div>
-										<h2 class="entry-title"><a href="#">Sed et persipiatis unde omnis iste natus</a></h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia quo dicta, similique, reiciendis beatae enim adipisci voluptates molestiae iusto, totam harum aliquid. Non officiis nobis, ut nesciunt eligendi asperiores.</p>
-										<a href="#">Read more</a>
-									</div>
-
-									<div class="post">
-										<div class="entry-date">
-											<div class="date">23</div>
-											<span class="month">Jun</span>
-										</div>
-										<div class="featured-image">
-											<img src="<?php echo asset_url();?>dummy/featured-image-2.jpg" alt="">
-										</div>
-										<h2 class="entry-title"><a href="#">Consectetur adipisicing elit</a></h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia quo dicta, similique, reiciendis beatae enim adipisci voluptates molestiae iusto, totam harum aliquid. Non officiis nobis, ut nesciunt eligendi asperiores.</p>
-										<a href="#">Read more</a>
-									</div>
-
-									<div class="post">
-										<div class="entry-date">
-											<div class="date">23</div>
-											<span class="month">Jun</span>
-										</div>
-										<div class="featured-image">
-											<img src="<?php echo asset_url();?>dummy/featured-image-3.jpg" alt="">
-										</div>
-										<h2 class="entry-title"><a href="#">Adipisci voluptates molestiae iusto</a></h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia quo dicta, similique, reiciendis beatae enim adipisci voluptates molestiae iusto, totam harum aliquid. Non officiis nobis, ut nesciunt eligendi asperiores.</p>
-										<a href="#">Read more</a>
-									</div>
-
-									<div class="post">
-										<div class="entry-date">
-											<div class="date">23</div>
-											<span class="month">Jun</span>
-										</div>
-										<div class="featured-image">
-											<img src="<?php echo asset_url();?>dummy/featured-image-4.jpg" alt="">
-										</div>
-										<h2 class="entry-title"><a href="#">Obcaecati officia quo dicta</a></h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia quo dicta, similique, reiciendis beatae enim adipisci voluptates molestiae iusto, totam harum aliquid. Non officiis nobis, ut nesciunt eligendi asperiores.</p>
-										<a href="#">Read more</a>
-									</div>
-
-									<div class="post">
-										<div class="entry-date">
-											<div class="date">23</div>
-											<span class="month">Jun</span>
-										</div>
-										<div class="featured-image">
-											<img src="<?php echo asset_url();?>dummy/featured-image-5.jpg" alt="">
-										</div>
-										<h2 class="entry-title"><a href="#">Nesciunt eligendi asperiores</a></h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia quo dicta, similique, reiciendis beatae enim adipisci voluptates molestiae iusto, totam harum aliquid. Non officiis nobis, ut nesciunt eligendi asperiores.</p>
-										<a href="#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-8 col-md-push-1">
-								<aside class="sidebar">
-									<div class="widget">
-										<h3 class="widget-title">Music Listing</h3>
-										<ul class="discography-list">
-											<?php foreach ($dancingListing as $object){ ?>
-											<li>
-												<figure class="cover"><img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1"></figure>
-												<div class="detail">
-													<h3><a href="#"><?php echo $object->group_name ?></a></h3>
-                                                                                                        <span class="year"><?php echo $object->group_details ?></span>
-													<span class="track">17 tracks</span>
-												</div>
-											</li>
-                                                                                        <?php } ?>
-										</ul>
-									</div>
-								</aside>
-							</div>
-						</div>
-					</div>
-				</div> <!-- .testimonial-section -->
-
-				
-			</main> <!-- .main-content -->
+                        <main>
+                            </br>
+                            
+                            <div class="row">
+                                <div class="col-md-2">
+                                    
+                                </div>
+                                <div class="col-md-7">
+                                    <h1>Music Listing</h1>
+                                    <?php foreach ($dancingListing as $object){ ?>
+                                    <div class="category_listing">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                               <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <ul>
+                                                    <li style="list-style-type: none;"><h3><a href="#"><?php echo $object->group_name ?></a></h3></li>                                       
+                                                    <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
+                                                    <li style="list-style-type: none;"><?php echo $object->contact_no ?></li>
+                                                    <li style="list-style-type: none;"><a href="http://www.weddingdirectory.lk/listing/Event-Entertainers" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                               </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </br>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                </div>
+                            </div>
+                        </main>
 
 			<footer class="site-footer">
 				<div class="container">
