@@ -45,5 +45,18 @@ class homeControll extends CI_Controller {
 
         }
     }
+    
+    public function MusicLoadById($page,$ID){
+        if(!file_exists('application/views/MainSite/'.$page.'.php')){
+            echo "Sory, File Filedoes not exist";
+        }
+        else {  
+           $this->load->model('model_dancing');
+           $data['dancingGroup']=$this->model_dancing->getDancingListDataById($ID);
+           
+           $this->load->view('MainSite/'.$page, $data);
+
+        }
+    }
 }
 ?>

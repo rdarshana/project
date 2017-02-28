@@ -16,11 +16,27 @@ class model_dancing extends CI_Model{
         parent::__construct();
     }
     
+    //Get all dancing group details
     function getDancingListData()
     {
-        $query = $this->db->query("SELECT DD.group_name,DD.group_details,DD.added_date, DD.dancing_styles,DD.address,DD.contact_no,DD.contact_person_name,DD.email,DD.web,DI.image_name from dancing_group_details as DD INNER JOIN dancing_group_images as DI ON DD.id = DI.group_details_id ");
+        $query = $this->db->query("SELECT DD.id,DD.group_name,DD.group_details,DD.added_date, DD.dancing_styles,DD.address,DD.contact_no,DD.contact_person_name,DD.email,DD.web,DI.image_name from dancing_group_details as DD INNER JOIN dancing_group_images as DI ON DD.id = DI.group_details_id ");
         
         if($query->num_rows()>0){
+            return $query->result();
+        }
+        else{
+            return null;
+        }
+    }
+    
+     //Get dancing groups data by ID   
+    function getDancingListDataById($ID)
+    {
+        print_r($ID);
+        $query = $this->db->query("SELECT DD.id,DD.group_name,DD.group_details,DD.added_date, DD.dancing_styles,DD.address,DD.contact_no,DD.contact_person_name,DD.email,DD.web,DI.image_name from dancing_group_details as DD INNER JOIN dancing_group_images as DI ON DD.id = DI.group_details_id where DD.id='". $ID."'");
+        if($query->num_rows()>0){
+            print_r($query->result());
+
             return $query->result();
         }
         else{

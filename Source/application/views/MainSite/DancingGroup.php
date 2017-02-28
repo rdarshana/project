@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Blog</title>
+		<title>Dancing Listing</title>
 		<!-- Loading third party fonts -->
 		<link href="<?php echo asset_url();?>css/homefont.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url();?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,39 +49,10 @@
 			</header> <!-- .site-header -->
 			
                         <main>
-                            </br>
-                            
-                            <div class="row">
-                                <div class="col-md-2">
-                                    
-                                </div>
-                                <div class="col-md-7">
-                                    <h1>Music Listing</h1>
-                                    <?php foreach ($dancingListing as $object){ ?>
-                                    <div class="category_listing">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                               <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <ul>
-                                                    <li style="list-style-type: none;"><h3><a href="#"><?php echo $object->group_name ?></a></h3></li>                                       
-                                                    <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
-                                                    <li style="list-style-type: none;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/2")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
-                                               </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </br>
-                                    <?php } ?>
-                                </div>
-                                <div class="col-md-3">
-                                    
-                                </div>
+                            <div>
+                                <?php print_r(dancingGroup) ?>
                             </div>
                         </main>
-
 			<footer class="site-footer">
 				<div class="container">
 					<img src="<?php echo asset_url();?>dummy/logo-footer.png" alt="Site Name">
