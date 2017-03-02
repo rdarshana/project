@@ -4172,3 +4172,16 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 .category_listing .row {
     background-color: LightGrey ;
 }
+
+.dl-horizontal dt 
+{
+    white-space: normal;
+    width: 100px; 
+}
+dt{
+  margin-right: 0;
+}
+
+dd{
+  margin-right: 0;
+}

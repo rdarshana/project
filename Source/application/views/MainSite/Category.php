@@ -61,7 +61,7 @@
                                     <div class="category_listing">
                                         <div class="row">
                                             <div class="col-md-3">
-                                               <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1">
+                                                <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1">
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>

@@ -49,10 +49,40 @@
 			</header> <!-- .site-header -->
 			
                         <main>
-                            <div>
-                                <?php print_r(dancingGroup) ?>
+                            </br>
+                            <div class="col-md-2">
+                                
+                                
+                                 <?php foreach ($dancingGroup as $object){ 
+                                     echo $object->group_details ;
+                                     
+                                 }
+?>
                             </div>
-                        </main>
+                            
+                            <div class="col-md-7">
+                                <?php foreach ($dancingGroup as $object){ ?>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1" height="250" width="300">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2> <?php echo $object->group_name ; ?></h2>
+                                        <dl class="dl-horizontal">
+                                            <dt>Description :</dt>
+                                            <dd><?php echo $object->group_details; ?></dd>
+                                            <dt>t</dt>
+                                            <dd>r</dd>
+                                        </dl>
+                                    </div> 
+                                </div>
+                                    
+                                <?php } ?>
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </main> 
 			<footer class="site-footer">
 				<div class="container">
 					<img src="<?php echo asset_url();?>dummy/logo-footer.png" alt="Site Name">
