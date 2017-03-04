@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Blog</title>
+		<title>Dancing Listing</title>
 		<!-- Loading third party fonts -->
 		<link href="<?php echo asset_url();?>css/homefont.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url();?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -40,8 +40,13 @@
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Contact")?>">Contact</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Payment")?>">Payment</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/PaymentOld")?>">PaymentOld<span class="caret"></span></a></li>
-							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Test")?>">Test</a></li>
-                                                        <li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category</a></li>
+							
+                                                        <li class="dropdown-submenu">
+                                                            <a href="#">Category</a>
+                                                            <ul class="menu">
+                                                                    <li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Dancing</a></li>
+                                                            </ul>
+                                                        </li>
 						</ul> <!-- .menu -->
 					</nav> <!-- .main-navigation -->
 					<div class="mobile-menu"></div>
@@ -65,10 +70,10 @@
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>
-                                                    <li style="list-style-type: none;"><h3><a href="#"><?php echo $object->group_name ?></a></h3></li>                                       
+                                                    <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/$object->id")?>"><?php echo $object->group_name ?></a></h3></li>                                       
                                                     <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
                                                     <li style="list-style-type: none;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/2")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                                    <li style="list-style-type: none;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
                                                </ul>
                                             </div>
                                         </div>
@@ -81,7 +86,8 @@
                                 </div>
                             </div>
                         </main>
-
+                        
+                        <div class="main-bottom-padding"></div>
 			<footer class="site-footer">
 				<div class="container">
 					<img src="<?php echo asset_url();?>dummy/logo-footer.png" alt="Site Name">

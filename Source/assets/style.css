@@ -4185,3 +4185,28 @@ dt{
 dd{
   margin-right: 0;
 }
+
+.text-right
+{
+    text-align: right !important;
+}
+
+.text-center
+{
+    text-align: center !important;
+}
+
+.text-left
+{
+    text-align: left !important;
+}
+
+.main-top-padding
+{
+    padding-top: 50px;
+}
+
+.main-bottom-padding
+{
+    padding-bottom: 100px;
+}

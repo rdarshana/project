@@ -49,40 +49,47 @@
 			</header> <!-- .site-header -->
 			
                         <main>
-                            </br>
-                            <div class="col-md-2">
-                                
-                                
-                                 <?php foreach ($dancingGroup as $object){ 
-                                     echo $object->group_details ;
-                                     
-                                 }
-?>
-                            </div>
+                            <div class="main-top-padding"></div>
+                            <div class="col-md-2"></div>
                             
                             <div class="col-md-7">
                                 <?php foreach ($dancingGroup as $object){ ?>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1" height="250" width="300">
+                                        <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1" height="300" width="350">
                                     </div>
                                     <div class="col-md-6">
-                                        <h2> <?php echo $object->group_name ; ?></h2>
-                                        <dl class="dl-horizontal">
-                                            <dt>Description :</dt>
-                                            <dd><?php echo $object->group_details; ?></dd>
-                                            <dt>t</dt>
-                                            <dd>r</dd>
-                                        </dl>
+                                        <h2 style="color: #fd5927"> <?php echo $object->group_name ; ?></h2>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="text-left">Contact Person </p>
+                                                <p class="text-left">Contact Number </p>
+                                                <p class="text-left">E-mail </p>
+                                                <p class="text-left">Web Site </p>
+                                                <p class="text-left">Dancing Style</p>
+                                                <p class="text-left">Address </p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <p class="text-left">: <?php echo $object->contact_person_name; ?></p>
+                                                <p class="text-left">: <?php echo $object->contact_no; ?></p>
+                                                <p class="text-left">: <?php echo $object->email; ?></p>
+                                                <p class="text-left">: <a href="<?php echo $object->web; ?> "></a></p>
+                                                <p class="text-left">: <?php echo $object->dancing_styles; ?></p>
+                                                <p class="text-left">: <?php echo $object->address; ?></p>
+                                            </div>
+                                        </div>
+
                                     </div> 
                                 </div>
+                                <p class="text-left"><?php echo $object->group_details; ?></p>
                                     
                                 <?php } ?>
                             </div>
-                            <div class="col-md-3">
-                                
-                            </div>
+                            
+                            <div class="col-md-3"></div>
+                           
                         </main> 
+                        
 			<footer class="site-footer">
 				<div class="container">
 					<img src="<?php echo asset_url();?>dummy/logo-footer.png" alt="Site Name">
