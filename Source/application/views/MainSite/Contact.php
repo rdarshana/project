@@ -42,6 +42,8 @@
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/PaymentOld")?>">PaymentOld<span class="caret"></span></a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Test")?>">Test</a></li>
                                                         <li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category</a></li>
+                                                        
+                                                        
 						</ul> <!-- .menu -->
 					</nav> <!-- .main-navigation -->
 					<div class="mobile-menu"></div>
