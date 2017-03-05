@@ -56,7 +56,7 @@
                                 <?php foreach ($dancingGroup as $object){ ?>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1" height="300" width="350">
+                                        <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="300" width="350">
                                     </div>
                                     <div class="col-md-6">
                                         <h2 style="color: #fd5927"> <?php echo $object->group_name ; ?></h2>
@@ -73,7 +73,7 @@
                                                 <p class="text-left">: <?php echo $object->contact_person_name; ?></p>
                                                 <p class="text-left">: <?php echo $object->contact_no; ?></p>
                                                 <p class="text-left">: <?php echo $object->email; ?></p>
-                                                <p class="text-left">: <a href="<?php echo $object->web; ?> "></a></p>
+                                                <p class="text-left">: <a href="<?php echo $object->web; ?>"><?php echo $object->web; ?></a></p>
                                                 <p class="text-left">: <?php echo $object->dancing_styles; ?></p>
                                                 <p class="text-left">: <?php echo $object->address; ?></p>
                                             </div>

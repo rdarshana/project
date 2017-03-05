@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
 		<title>Dancing Listing</title>
+                 <!-- Bootstrap Core CSS -->
+                <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
 		<!-- Loading third party fonts -->
 		<link href="<?php echo asset_url();?>css/homefont.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url();?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -16,7 +18,10 @@
 		<script src="<?php echo asset_url();?>js/ie-support/html5.js"></script>
 		<script src="<?php echo asset_url();?>js/ie-support/respond.js"></script>
 		<![endif]-->
+                
+                
 
+              
 	</head>
 
 	<body>
@@ -39,20 +44,48 @@
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Blog")?>">Blog</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Contact")?>">Contact</a></li>
 							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/Payment")?>">Payment</a></li>
-							<li class="menu-item"><a href="<?php echo base_url("index.php/homeControll/PaymentOld")?>">PaymentOld<span class="caret"></span></a></li>
-							
-                                                        <li class="dropdown-submenu">
-                                                            <a href="#">Category</a>
-                                                            <ul class="menu">
-                                                                    <li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Dancing</a></li>
-                                                            </ul>
-                                                        </li>
+							<li class="menu-item current-menu-item"><a href="<?php echo base_url("index.php/homeControll/Category")?>">Category<span class="caret"></span></a></li>
 						</ul> <!-- .menu -->
 					</nav> <!-- .main-navigation -->
 					<div class="mobile-menu"></div>
 				</div>
-			</header> <!-- .site-header -->
-			
+                            
+                            
+ <!--                           
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	-->		</header> <!-- .site-header -->
+			                      
+                        
                         <main>
                             </br>
                             
@@ -66,7 +99,7 @@
                                     <div class="category_listing">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <img src="<?php echo asset_url();?>dummy/<?php echo $object->image_name ?>" alt="thumbnail 1">
+                                                <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="170" width="200">
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>
@@ -113,8 +146,11 @@
 			</footer> <!-- .site-footer -->
 
 		</div> <!-- #site-content -->
-
-		<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>		
+       
+        <!-- Bootstrap Core JavaScript -->
+        
+		<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>
+                <script src="<?php echo base_url();?>js/bootstrap.min.js"></script>
 		<script src="<?php echo asset_url();?>js/plugins.js"></script>
 		<script src="<?php echo asset_url();?>js/app.js"></script>
 		
