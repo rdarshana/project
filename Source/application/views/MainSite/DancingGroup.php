@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
 		<title>Dancing Listing</title>
+                <!-- Bootstrap Core CSS -->
+                <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
+                
 		<!-- Loading third party fonts -->
 		<link href="<?php echo asset_url();?>css/homefont.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url();?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,10 +53,12 @@
 			
                         <main>
                             <div class="main-top-padding"></div>
+                            <?php foreach ($dancingGroup as $object){ ?>
+                            <div class="row">
                             <div class="col-md-2"></div>
                             
                             <div class="col-md-7">
-                                <?php foreach ($dancingGroup as $object){ ?>
+                                
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="300" width="350">
@@ -83,11 +88,59 @@
                                 </div>
                                 <p class="text-left"><?php echo $object->group_details; ?></p>
                                     
-                                <?php } ?>
+                                
                             </div>
                             
                             <div class="col-md-3"></div>
-                           
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-7 well">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <!-- Form Name -->
+                                            <legend>Send Inquiry to </legend>
+                                            
+                                            <!-- Text input -->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="textinput">Name</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="txtname" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="textinput">Phone</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="txtphone" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="email">E-mail</label>
+                                                <div class="col-md-7">
+                                                    <input type="email" class="form-control" id="txtemail" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <lable class="col-md-3 control-label" for="textinput">Message</lable>
+                                                <div class="col-md-7">
+                                                    <textarea   class="form-control" id="txtmessage" rows="4" placeholder="message" required="true"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                </div>
+                            </div>
+                           <?php } ?>
                         </main> 
                         
 			<footer class="site-footer">
@@ -115,8 +168,9 @@
 			</footer> <!-- .site-footer -->
 
 		</div> <!-- #site-content -->
-
-		<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>		
+                
+		<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>
+                <script src="<?php echo base_url();?>js/bootstrap.min.js"></script>
 		<script src="<?php echo asset_url();?>js/plugins.js"></script>
 		<script src="<?php echo asset_url();?>js/app.js"></script>
 		
