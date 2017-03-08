@@ -132,7 +132,31 @@
                                                 </div>
                                             </div>
                                             
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="textimnput">Wedding Date</label>
+                                                <div class="col-md-7">
+                                                     <input type="text" class="form-control" id="txtphone" placeholder="mm / dd/ yyyy">
+                                                </div>
+                                            </div>
                                             
+                                            <div class="form-group">
+                                            <input id="checkbox-0" class="styled" name="boxEmail" value="yes" type="checkbox">
+                                            <label class="col-md-3 control-label" for="checkbox-0"> E-Mail </label>
+                                            </div>
+                                            <!--<div class="input-group date" data-provide="datepicker">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-th"></span>
+                                                </div>
+                                            </div>-->
+                                            
+                                            <!--<input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">-->
+                                            
+                                            <!--<div class="input-append date form_datetime">
+                                                    <input size="16" type="text" value="" readonly>
+                                                    <span class="add-on"><i class="icon-th"></i></span>
+                                            </div>-->
+
                                         </fieldset>
                                     </form>
                                 </div>
@@ -168,11 +192,31 @@
 			</footer> <!-- .site-footer -->
 
 		</div> <!-- #site-content -->
-                
-		<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" />
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+		<!--<script src="<?php echo asset_url();?>js/jquery-1.11.1.min.js"></script>-->
+               <!-- <script src="<?php echo base_url();?>js/jquery.js"></script>-->
                 <script src="<?php echo base_url();?>js/bootstrap.min.js"></script>
 		<script src="<?php echo asset_url();?>js/plugins.js"></script>
 		<script src="<?php echo asset_url();?>js/app.js"></script>
+                
+                <script type="text/javascript">
+                   
+               /* $(document).ready(function () {
+                    
+                     $('.datepicker').datepicker();
+                     
+                      $(".form_datetime").datetimepicker({
+                           format: "dd MM yyyy - hh:ii"
+                        });
+                        
+                        alert('hi');
+                  });
+                  */
+                  </script>
 		
 	</body>
 
