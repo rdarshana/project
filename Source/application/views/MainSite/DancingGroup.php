@@ -101,7 +101,7 @@
                                     <form class="form-horizontal">
                                         <fieldset>
                                             <!-- Form Name -->
-                                            <legend>Send Inquiry to </legend>
+                                            <legend>Send Inquiry to <?php echo $object->group_name; ?></legend>
                                             
                                             <!-- Text input -->
                                             <div class="form-group">
@@ -126,7 +126,7 @@
                                             </div>
                                             
                                             <div class="form-group">
-                                                <lable class="col-md-3 control-label" for="textinput">Message</lable>
+                                                <label class="col-md-3 control-label" for="textinput">Message</label>
                                                 <div class="col-md-7">
                                                     <textarea   class="form-control" id="txtmessage" rows="4" placeholder="message" required="true"></textarea>
                                                 </div>
@@ -140,9 +140,32 @@
                                             </div>
                                             
                                             <div class="form-group">
-                                            <input id="checkbox-0" class="styled" name="boxEmail" value="yes" type="checkbox">
-                                            <label class="col-md-3 control-label" for="checkbox-0"> E-Mail </label>
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-7">
+                                                    <div class="form-group">
+                                                        <div class="col-md-1">
+                                                            <input id="checkbox-0" style="vertical-align: middle; margin: 17px;" class="styled" name="boxEmail" value="yes" type="checkbox">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label class="col-md-3 control-label" for="checkbox-0"> E-Mail </label>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <input id="checkbox-0" style="vertical-align: middle; margin: 17px;" class="styled align-right" name="boxEmail" value="yes" type="checkbox">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="control-label align-left" for="checkbox-0">Need Call Back</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            
+                                            <div class="form-group">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-6">
+                                                    <btton class="btn btn-large btn-block btn-default" style="color: #00aeaf; ">Book Now</btton>
+                                                </div>
                                             </div>
+                                            
                                             <!--<div class="input-group date" data-provide="datepicker">
                                                 <input type="text" class="form-control">
                                                 <div class="input-group-addon">
