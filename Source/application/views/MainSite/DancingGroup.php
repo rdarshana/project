@@ -98,7 +98,10 @@
                                 <div class="col-md-2">
                                 </div>
                                 <div class="col-md-7 well">
-                                    <form class="form-horizontal">
+                                    <!--<form method="get" action="SendMail/SendMailTo" class="form-horizontal">-->
+                                      <?php 
+                                        $attributes = array("class" => "form-horizontal", "id" => "employeeform", "name" => "employeeform");
+                                        echo form_open("SendMail/SendMailTo", $attributes);?>
                                         <fieldset>
                                             <!-- Form Name -->
                                             <legend>Send Inquiry to <?php echo $object->group_name; ?></legend>
@@ -107,35 +110,35 @@
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="textinput">Name</label>
                                                 <div class="col-md-7">
-                                                    <input type="text" class="form-control" id="txtname" placeholder="Name">
+                                                    <input type="text" class="form-control" name="u_name" id="txtname" placeholder="Name">
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="textinput">Phone</label>
                                                 <div class="col-md-7">
-                                                    <input type="text" class="form-control" id="txtphone" placeholder="Phone">
+                                                    <input type="text" class="form-control" name="u_phone" id="txtphone" placeholder="Phone">
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="email">E-mail</label>
                                                 <div class="col-md-7">
-                                                    <input type="email" class="form-control" id="txtemail" placeholder="Email">
+                                                    <input type="email" class="form-control" name="u_phone" id="txtemail" placeholder="Email">
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="textinput">Message</label>
                                                 <div class="col-md-7">
-                                                    <textarea   class="form-control" id="txtmessage" rows="4" placeholder="message" required="true"></textarea>
+                                                    <textarea class="form-control" name="u_message" id="txtmessage" rows="4" placeholder="message" required="true"></textarea>
                                                 </div>
                                             </div>
                                             
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="textimnput">Wedding Date</label>
                                                 <div class="col-md-7">
-                                                     <input type="text" class="form-control" id="txtphone" placeholder="mm / dd/ yyyy">
+                                                     <input type="text" class="form-control" name="u_wedingDate" id="txtphone" placeholder="mm / dd/ yyyy">
                                                 </div>
                                             </div>
                                             
@@ -144,13 +147,13 @@
                                                 <div class="col-md-7">
                                                     <div class="form-group">
                                                         <div class="col-md-1">
-                                                            <input id="checkbox-0" style="vertical-align: middle; margin: 17px;" class="styled" name="boxEmail" value="yes" type="checkbox">
+                                                            <input id="checkbox-0" name="u_sendMail" style="vertical-align: middle; margin: 17px;" class="styled" name="boxEmail" value="yes" type="checkbox">
                                                         </div>
                                                         <div class="col-md-3">
                                                             <label class="col-md-3 control-label" for="checkbox-0"> E-Mail </label>
                                                         </div>
                                                         <div class="col-md-1">
-                                                            <input id="checkbox-0" style="vertical-align: middle; margin: 17px;" class="styled align-right" name="boxEmail" value="yes" type="checkbox">
+                                                            <input id="checkbox-0" name="needCall" style="vertical-align: middle; margin: 17px;" class="styled align-right" name="boxEmail" value="yes" type="checkbox">
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label class="control-label align-left" for="checkbox-0">Need Call Back</label>
@@ -162,7 +165,9 @@
                                             <div class="form-group">
                                                 <div class="col-md-3"></div>
                                                 <div class="col-md-6">
-                                                    <btton class="btn btn-large btn-block btn-default" style="color: #00aeaf; ">Book Now</btton>
+                                                    <!--<button class="btn btn-large btn-block btn-default" value="submit" style="color: #00aeaf;">Book Now</button>-->
+                                                    <button class="btn btn-large btn-block btn-success" value="submit">Book Now</button>
+                                                    <!--<button type="submit" id="button2id" class="btn btn-success">Submit</button> -->
                                                 </div>
                                             </div>
                                             
