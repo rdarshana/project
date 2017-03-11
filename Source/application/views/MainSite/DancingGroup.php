@@ -86,13 +86,14 @@
 
                                     </div> 
                                 </div>
+                                <div style="margin-top: 20px"></div>
                                 <p class="text-left"><?php echo $object->group_details; ?></p>
-                                    
-                                
                             </div>
                             
                             <div class="col-md-3"></div>
                             </div>
+                            
+                            <div style="margin-top: 35px"></div>
                             
                             <div class="row">
                                 <div class="col-md-2">
@@ -104,7 +105,7 @@
                                         echo form_open("SendMail/SendMailTo", $attributes);?>
                                         <fieldset>
                                             <!-- Form Name -->
-                                            <legend>Send Inquiry to <?php echo $object->group_name; ?></legend>
+                                            <legend>Send Booking Request to <?php echo $object->group_name; ?></legend>
                                             
                                             <!-- Text input -->
                                             <div class="form-group">
@@ -141,6 +142,8 @@
                                                      <input type="text" class="form-control" name="u_wedingDate" id="txtphone" placeholder="mm / dd/ yyyy">
                                                 </div>
                                             </div>
+                                           
+                                            
                                             
                                             <div class="form-group">
                                                 <div class="col-md-3"></div>

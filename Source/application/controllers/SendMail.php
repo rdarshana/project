@@ -15,6 +15,8 @@ class SendMail extends CI_Controller{
     
     public function SendMailTo()
     {
+        
+        
         $data = array (
             'name' => $this->input->post('u_name'),
             'phone' => $this->input->post('u_phone')
