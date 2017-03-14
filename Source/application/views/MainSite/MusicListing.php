@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-md-7">
                                     <h1>Music Listing</h1>
-                                    <?php foreach ($dancingListing as $object){ ?>
+                                    <?php foreach ($musicListing as $object){ ?>
                                     <div class="category_listing">
                                         <div class="row">
                                             <div class="col-md-3">
@@ -103,11 +103,11 @@
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>
-                                                    <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/DancingGroup/$object->id")?>"><?php echo $object->group_name ?></a></h3></li>                                       
+                                                    <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/MusicGroup/$object->id")?>"><?php echo $object->group_name ?></a></h3></li>                                       
                                                     <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
                                                     
                                                     <li style="list-style-type: none ; margin-top: 10px;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/DancingGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/MusicGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
                                                </ul>
                                             </div>
                                         </div>
