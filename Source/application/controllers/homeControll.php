@@ -33,7 +33,7 @@ class homeControll extends CI_Controller {
         $this->load->view('MainSite/Test');
     }
     
-    public function Category($page = 'Category'){
+    public function DancingListing($page = 'DancingListing'){
         if(!file_exists('application/views/MainSite/'.$page.'.php')){
             echo "Sory, File Filedoes not exist";
         }
