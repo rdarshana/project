@@ -99,14 +99,15 @@
                                     <div class="category_listing">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="170" width="200">
+                                                <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="190" width="200">
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>
                                                     <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/$object->id")?>"><?php echo $object->group_name ?></a></h3></li>                                       
                                                     <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
-                                                    <li style="list-style-type: none;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                                    
+                                                    <li style="list-style-type: none ; margin-top: 10px;"><?php echo $object->contact_no ?></li>
+                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/DancingGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
                                                </ul>
                                             </div>
                                         </div>

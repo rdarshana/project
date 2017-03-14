@@ -125,7 +125,7 @@
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="email">E-mail</label>
                                                 <div class="col-md-7">
-                                                    <input type="email" class="form-control" name="u_phone" id="txtemail" placeholder="Email">
+                                                    <input type="email" class="form-control" name="u_email" id="txtemail" placeholder="Email">
                                                 </div>
                                             </div>
                                             
@@ -150,13 +150,13 @@
                                                 <div class="col-md-7">
                                                     <div class="form-group">
                                                         <div class="col-md-1">
-                                                            <input id="checkbox-0" name="u_sendMail" style="vertical-align: middle; margin: 17px;" class="styled" name="boxEmail" value="yes" type="checkbox">
+                                                            <input id="checkbox-0" name="u_sendMail" style="vertical-align: middle; margin: 17px;" class="styled" value="yes" type="checkbox">
                                                         </div>
                                                         <div class="col-md-3">
                                                             <label class="col-md-3 control-label" for="checkbox-0"> E-Mail </label>
                                                         </div>
                                                         <div class="col-md-1">
-                                                            <input id="checkbox-0" name="needCall" style="vertical-align: middle; margin: 17px;" class="styled align-right" name="boxEmail" value="yes" type="checkbox">
+                                                            <input id="checkbox-0" name="u_needCall" style="vertical-align: middle; margin: 17px;" class="styled  align-right" value="yes" type="checkbox">
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label class="control-label align-left" for="checkbox-0">Need Call Back</label>
