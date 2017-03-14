@@ -53,7 +53,7 @@
 			
                         <main>
                             <div class="main-top-padding"></div>
-                            <?php foreach ($dancingGroup as $object){ ?>
+                            <?php foreach ($lightGroup as $object){ ?>
                             <div class="row">
                             <div class="col-md-2"></div>
                             
@@ -64,14 +64,13 @@
                                         <img src="<?php echo base_url();?>img/uploads/new_<?php echo $object->image_name ?>" alt="thumbnail 1" height="300" width="350">
                                     </div>
                                     <div class="col-md-6">
-                                        <h2 style="color: #fd5927"> <?php echo $object->group_name ; ?></h2>
+                                        <h2 style="color: #fd5927"> <?php echo $object->supplier_name ; ?></h2>
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <p class="text-left">Contact Person </p>
                                                 <p class="text-left">Contact Number </p>
                                                 <p class="text-left">E-mail </p>
                                                 <p class="text-left">Web Site </p>
-                                                <p class="text-left">Dancing Style</p>
                                                 <p class="text-left">Address </p>
                                             </div>
                                             <div class="col-md-7">
@@ -79,7 +78,6 @@
                                                 <p class="text-left">: <?php echo $object->contact_no; ?></p>
                                                 <p class="text-left">: <?php echo $object->email; ?></p>
                                                 <p class="text-left">: <a href="<?php echo $object->web; ?>"><?php echo $object->web; ?></a></p>
-                                                <p class="text-left">: <?php echo $object->dancing_styles; ?></p>
                                                 <p class="text-left">: <?php echo $object->address; ?></p>
                                             </div>
                                         </div>
@@ -87,7 +85,7 @@
                                     </div> 
                                 </div>
                                 <div style="margin-top: 20px"></div>
-                                <p class="text-left"><?php echo $object->group_details; ?></p>
+                                <p class="text-left"><?php echo $object->supplier_details; ?></p>
                             </div>
                             
                             <div class="col-md-3"></div>
@@ -105,7 +103,7 @@
                                         echo form_open("SendMail/SendMailTo", $attributes);?>
                                         <fieldset>
                                             <!-- Form Name -->
-                                            <legend>Send Booking Request to <?php echo $object->group_name; ?></legend>
+                                            <legend>Send Booking Request to <?php echo $object->supplier_name; ?></legend>
                                             
                                             <!-- Text input -->
                                             <div class="form-group">

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Dancing Listing</title>
+		<title>Music Group</title>
                 <!-- Bootstrap Core CSS -->
                 <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
                 
@@ -53,7 +53,7 @@
 			
                         <main>
                             <div class="main-top-padding"></div>
-                            <?php foreach ($dancingGroup as $object){ ?>
+                            <?php foreach ($musicGroup as $object){ ?>
                             <div class="row">
                             <div class="col-md-2"></div>
                             

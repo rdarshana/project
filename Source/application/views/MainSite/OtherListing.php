@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Dancing Listing</title>
+		<title>Other Supplier Listing</title>
                  <!-- Bootstrap Core CSS -->
                 <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
 		<!-- Loading third party fonts -->
@@ -94,8 +94,8 @@
                                     
                                 </div>
                                 <div class="col-md-7">
-                                    <h1>Music Listing</h1>
-                                    <?php foreach ($dancingListing as $object){ ?>
+                                    <h1>Other Group Listing</h1>
+                                    <?php foreach ($otherListing as $object){ ?>
                                     <div class="category_listing">
                                         <div class="row">
                                             <div class="col-md-3">
@@ -103,11 +103,11 @@
                                             </div>
                                             <div class="col-md-9">
                                                 <ul>
-                                                    <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/DancingGroup/$object->id")?>"><?php echo $object->group_name ?></a></h3></li>                                       
-                                                    <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
+                                                    <li style="list-style-type: none;"><h3><a href="<?php echo base_url("index.php/homeControll/OtherLoadById/OtherGroup/$object->id")?>"><?php echo $object->supplier_name ?></a></h3></li>                                       
+                                                    <li style="list-style-type: none;"><?php echo $object->supplier_details ?></li>
                                                     
                                                     <li style="list-style-type: none ; margin-top: 10px;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/DancingGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/OtherLoadById/OtherGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
                                                </ul>
                                             </div>
                                         </div>

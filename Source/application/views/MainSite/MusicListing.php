@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Dancing Listing</title>
+		<title>Music Listing</title>
                  <!-- Bootstrap Core CSS -->
                 <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
 		<!-- Loading third party fonts -->
@@ -107,7 +107,7 @@
                                                     <li style="list-style-type: none;"><?php echo $object->group_details ?></li>
                                                     
                                                     <li style="list-style-type: none ; margin-top: 10px;"><?php echo $object->contact_no ?></li>
-                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/DancingLoadById/MusicGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
+                                                    <li style="list-style-type: none; margin-top: 10px;"><a href="<?php echo base_url("index.php/homeControll/MusicLoadById/MusicGroup/$object->id")?>" class="btn btn-default btn-sm center-block">View More Details</a></li>
                                                </ul>
                                             </div>
                                         </div>

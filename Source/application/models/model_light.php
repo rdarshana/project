@@ -17,9 +17,9 @@ class model_light extends CI_Model{
     }
     
     //Get all dancing group details
-    function getLigntListData()
+    function getLightListData()
     {
-        $query = $this->db->query("SELECT DD.id,DD.group_name,DD.group_details, DD.dancing_styles,DD.contact_no,DD.web,DI.image_name from light_group_details as DD INNER JOIN light_group_images as DI ON DD.id = DI.group_details_id ");
+        $query = $this->db->query("SELECT DD.id,DD.supplier_name,DD.supplier_details,DD.contact_no,DD.web,DI.image_name from light_group_details as DD INNER JOIN light_group_images as DI ON DD.id = DI.group_details_id ");
         
         if($query->num_rows()>0){
             return $query->result();
@@ -32,7 +32,7 @@ class model_light extends CI_Model{
      //Get dancing groups data by ID   
     function getLightListDataById($ID)
     {
-        $query = $this->db->query("SELECT DD.id,DD.group_name,DD.group_details,DD.added_date, DD.dancing_styles,DD.address,DD.contact_no,DD.contact_person_name,DD.email,DD.web,DI.image_name from light_group_details as DD INNER JOIN light_group_images as DI ON DD.id = DI.group_details_id where DD.id='". $ID."'");
+        $query = $this->db->query("SELECT DD.id,DD.supplier_name,DD.supplier_details,DD.added_date,DD.address,DD.contact_no,DD.contact_person_name,DD.email,DD.web,DI.image_name from light_group_details as DD INNER JOIN light_group_images as DI ON DD.id = DI.group_details_id where DD.id='". $ID."'");
         if($query->num_rows()>0){
                 
             return $query->result();

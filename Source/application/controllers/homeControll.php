@@ -91,7 +91,7 @@ class homeControll extends CI_Controller {
         else {  
            $this->load->model('model_light');
            $data['lightListing']=$this->model_light->getLightListData();
-           
+
            $this->load->view('MainSite/'.$page, $data);
 
         }
